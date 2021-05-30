@@ -2,6 +2,15 @@
 BEM - Architecture/Methodology
 COLORS TO BE USED
 */
+/*
+* All mixins
+*/
+/*
+* COLORS
+*/
+/*
+* GRID
+*/
 *,
 *::after,
 *::before {
@@ -25,3 +34,58 @@ body {
   font-weight: lighter;
   line-height: 1.7;
   padding: 0.5rem; }
+
+header nav {
+  height: 25vh;
+  background-color: #28282b;
+  background-image: linear-gradient(to left, rgba(40, 40, 43, 0.01), rgba(25, 25, 112, 0.2));
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 7vh, 0 100%); }
+  header nav::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+header .navigation {
+  list-style: none;
+  float: right;
+  padding: 2rem;
+  margin-right: 4rem;
+  font-size: 1.3rem;
+  font-weight: 400; }
+  header .navigation li {
+    display: inline-block;
+    margin-left: 3rem; }
+    header .navigation li:first-child {
+      margin: 0; }
+    header .navigation li a {
+      text-decoration: none;
+      color: #eeeef0;
+      text-transform: uppercase; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 4rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 4rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 4rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }

@@ -1,0 +1,17 @@
+/*
+* All mixins
+*/
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin style-link-text($color) {
+  text-decoration: none;
+  color: $color;
+  text-transform: uppercase;
+}

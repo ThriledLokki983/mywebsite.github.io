@@ -1,0 +1,38 @@
+header {
+  nav {
+    height: 25vh;
+    background-color: $color-background-primary-1;
+    background-image: linear-gradient(
+      to left,
+      rgba($color-background-primary-1, 0.01),
+      rgba($color-background-primary-2, 0.2)
+    );
+    position: relative;
+    // background-size: cover;
+    // background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 7vh, 0 100%);
+    @include clearfix;
+  }
+
+  .navigation {
+    list-style: none;
+    float: right;
+    padding: 2rem;
+    margin-right: 4rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    li {
+      display: inline-block;
+      margin-left: 3rem;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      a {
+        @include style-link-text($color-text-light-gray);
+      }
+    }
+  }
+}
