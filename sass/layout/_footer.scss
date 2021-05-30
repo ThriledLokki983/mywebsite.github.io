@@ -1,13 +1,25 @@
 footer {
   background-color: $color-background-primary-1;
-  color: $color-gray-light-1;
-  padding: 5rem;
+  background-image: linear-gradient(
+    to left,
+    rgba($color-background-primary-1, 0.1),
+    rgba($color-background-primary-2, 0.2)
+  );
+  //   color: $color-gray-light-1;
+  //   padding: 5rem;
+
+  .row {
+    display: inline-block;
+    margin: 4rem;
+    padding: 2rem;
+  }
 
   .card {
     padding: 2rem;
 
     &__heading {
       font-size: 1.4rem;
+      color: $color-gray-dark-1;
     }
 
     &__links {
