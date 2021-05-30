@@ -38,8 +38,10 @@ body {
 header nav {
   height: 25vh;
   background-color: #28282b;
-  background-image: linear-gradient(to left, rgba(40, 40, 43, 0.01), rgba(25, 25, 112, 0.2));
+  background-image: linear-gradient(to left, rgba(40, 40, 43, 0.1), rgba(25, 25, 112, 0.2));
   position: relative;
+  background-size: cover;
+  background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 7vh, 0 100%); }
   header nav::after {
@@ -89,3 +91,11 @@ header .navigation {
     width: calc( 2 * ((100% - 3 * 4rem) / 4) + 4rem); }
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
+
+footer {
+  background-color: #28282b; }
+
+.section-about {
+  background-color: #eeeef0;
+  padding: 25rem 0;
+  margin-top: -25vh; }

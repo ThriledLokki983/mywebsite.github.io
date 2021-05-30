@@ -4,12 +4,13 @@ header {
     background-color: $color-background-primary-1;
     background-image: linear-gradient(
       to left,
-      rgba($color-background-primary-1, 0.01),
+      rgba($color-background-primary-1, 0.1),
       rgba($color-background-primary-2, 0.2)
     );
+    //   url(../img/prog/code-1.jpg);
     position: relative;
-    // background-size: cover;
-    // background-position: top;
+    background-size: cover;
+    background-position: top;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 7vh, 0 100%);
     @include clearfix;
