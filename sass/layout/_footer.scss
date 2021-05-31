@@ -1,37 +1,45 @@
 footer {
+  margin-bottom: 4rem;
   background-color: $color-background-primary-1;
   background-image: linear-gradient(
     to left,
     rgba($color-background-primary-1, 0.1),
     rgba($color-background-primary-2, 0.2)
   );
-  //   color: $color-gray-light-1;
-  //   padding: 5rem;
 
   .row {
-    display: inline-block;
-    margin: 4rem;
-    padding: 2rem;
+    height: 25vh;
+    margin-bottom: -12rem;
+    width: 90%;
+    padding: 4rem;
+    border-bottom: 2px solid $color-white;
+  }
+}
+
+.card {
+  padding: 2rem;
+
+  &__heading {
+    font-size: 1.4rem;
+    color: $color-gray-dark-1;
+    padding: 1rem;
+    text-align: left;
   }
 
-  .card {
-    padding: 2rem;
+  &__links {
+    font-size: 1.2rem;
 
-    &__heading {
-      font-size: 1.4rem;
-      color: $color-gray-dark-1;
-    }
-
-    &__links {
-      font-size: 1.2rem;
-
-      ul {
-        list-style: none;
-        li {
-          a {
-            text-decoration: none;
-            color: $color-gray-dark-1;
-          }
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: left;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        a {
+          text-decoration: none;
+          color: $color-gray-dark-1;
         }
       }
     }
