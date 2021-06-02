@@ -4,7 +4,8 @@
   "description": "my own website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss ../css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss ../css/style.css -w",
+    "serve": "live-server"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/ThriledLokki983/mywebsite.github.io#readme",
   "devDependencies": {
     "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }

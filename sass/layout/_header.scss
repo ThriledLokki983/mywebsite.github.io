@@ -32,7 +32,7 @@ header {
       }
 
       a {
-        @include style-link-text($color-text-light-gray);
+        @include style-link-text($color-gray-light);
       }
     }
   }
