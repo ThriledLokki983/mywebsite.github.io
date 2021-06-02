@@ -49,6 +49,16 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -70,11 +80,11 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: 800;
     letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
+    animation-name: moveInUp;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     /* animation-delay: 2s; 
@@ -90,16 +100,29 @@ body {
   .heading-primary--sub2 {
     font-size: 2rem;
     word-spacing: 1rem;
+    letter-spacing: 0.3rem;
     text-transform: capitalize;
     font-style: italic;
     font-weight: 300; }
+  .heading-primary a {
+    text-decoration: none; }
+    .heading-primary a:link, .heading-primary a:visited {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-weight: 300;
+      color: #fff;
+      text-decoration: none;
+      background-size: 250%;
+      transition: all 0.4s;
+      color: #e97100;
+      font-weight: 600; }
 
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ffe042, #e71989);
+  background-image: linear-gradient(to right, #1d1803, #e97100);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.3rem;
@@ -120,12 +143,10 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(2, 2, 22, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
+  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.9), rgba(3, 3, 0, 0.9));
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
